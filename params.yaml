@@ -1,0 +1,33 @@
+proj_dir: '/glade/derecho/scratch/olewis/python_scripts/'
+obs_dir: '/glade/derecho/scratch/olewis/python_scripts/obs/'
+run_dir: '/glade/derecho/scratch/olewis/python_scripts/rundir/'
+DART_dir: '/glade/work/olewis/DART'
+MPAS_dir: '/glade/work/olewis/MPAS'
+
+MPAS_stream: '/glade/derecho/scratch/olewis/python_scripts/templates/streams.atmosphere'
+
+inout_state: '/glade/derecho/scratch/olewis/python_scripts/output/'
+init_state: '/glade/derecho/scratch/olewis/python_scripts/init/'
+
+rtcoef_file: '/glade/derecho/scratch/olewis/python_scripts/templates/rtcoef_dummy_5_dummyir.dat'
+sccldcoef_file: '/glade/derecho/scratch/olewis/python_scripts/templates/sccldcoef_dummy_5_dummyir.dat'
+
+obs_type: 'HYDROSAT_TB'
+mpas_vars_cloud: ['theta',                 'QTY_POTENTIAL_TEMPERATURE',
+                  'surface_pressure',      'QTY_SURFACE_PRESSURE',
+                  'uReconstructZonal',     'QTY_U_WIND_COMPONENT',
+                  'uReconstructMeridional','QTY_V_WIND_COMPONENT',
+                  'u',                     'QTY_EDGE_NORMAL_SPEED',
+                  'w',                     'QTY_VERTICAL_VELOCITY',
+                  'qv',                    'QTY_VAPOR_MIXING_RATIO',
+#                  'qc',                    'QTY_CLOUDWATER_MIXING_RATIO',
+#                  'qr',                    'QTY_RAINWATER_MIXING_RATIO',
+#                 'qs',                    'QTY_SNOW_MIXING_RATIO',
+#                  'qi',                    'QTY_ICE_MIXING_RATIO',
+                  'rho',                   'QTY_DENSITY',
+                  'u10',                   'QTY_10M_U_WIND_COMPONENT',
+                  'v10',                   'QTY_10M_V_WIND_COMPONENT',
+                  't2m',                   'QTY_2M_TEMPERATURE',
+                  'q2',                    'QTY_2M_SPECIFIC_HUMIDITY',
+                  'skintemp',              'QTY_SKIN_TEMPERATURE',]
+#                  'cldfrac',               'QTY_CLOUD_FRACTION',]'
